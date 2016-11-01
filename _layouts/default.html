@@ -19,6 +19,15 @@
 			{{ content }}
 			
 			</div><!-- /.container -->
+			<ul>
+				{% for member in site.data.members %}
+				  <li>
+				    <a href="https://github.com/{{ member.github }}">
+				      {{ member.name }}
+				    </a>
+				  </li>
+				{% endfor %}
+				</ul>
 			<footer>
 	    		<ul>
 	        		<li><a href="mailto:zhanghongmin1031@gmail.com">email</a></li>
